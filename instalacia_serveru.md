@@ -281,7 +281,7 @@ Inštalácia GUI utility pre správu databázy cez prehliadač.
 sudo apt install phpmyadmin
 ```
 
-Po spustení inštalácie sa zobrazí séria okien s otázkami, nikde nič nevypĺňať, len stlačiť enter
+Po spustení inštalácie sa zobrazí séria okien s otázkami, **nikde nič nevypĺňať, len stláčať enter**
 ![phpmyadmin_1](https://raw.githubusercontent.com/matej172/webte2-installation/main/img/phpmyadmin_1.png)
 ![phpmyadmin_2](https://raw.githubusercontent.com/matej172/webte2-installation/main/img/phpmyadmin_2.png)
 ![phpmyadmin_3](https://raw.githubusercontent.com/matej172/webte2-installation/main/img/phpmyadmin_3.png)
@@ -357,7 +357,7 @@ server {
 
 ```
 
-Po reštarte nginx serveru príkazom ```sudo service nginx restart``` otvoriť stránku [https://nodeXX.webte.fei.stuba.sk/phpmyadmin](https://siteXX.webte.fei.stuba.sk/phpmyadmin). Úvodná obrazovka by mala vyzerať takto:
+Po reštarte nginx serveru príkazom ```sudo service nginx restart``` otvoriť stránku `https://nodeXX.webte.fei.stuba.sk/phpmyadmin`. Úvodná obrazovka by mala vyzerať takto:
 
 ![phpmyadmin_5](https://raw.githubusercontent.com/matej172/webte2-installation/main/img/phpmyadmin_5.png)
 
