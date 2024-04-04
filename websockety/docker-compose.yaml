@@ -1,0 +1,22 @@
+services:
+  # Nginx webserver service
+  nginx:
+    image: nginx:1.18
+    ports:
+      - 8443:443
+      - 8080:80
+      - 8282:8282
+    volumes:
+      - ./src:/var/www/node8.webte.fei.stuba.sk
+      - ./.docker/nginx/conf.d:/etc/nginx/conf.d
+      - ./.docker/nginx/certs:/etc/nginx/certs
+    depends_on:
+      - php
+
+  # PHP-FPM service
+  php:
+    build: ./src
+    working_dir: /var/www/node8.webte.fei.stuba.sk
+    volumes:
+      - ./src:/var/www/node8.webte.fei.stuba.sk
+    command: sh -c "php ./wsserver.php start -d && php-fpm"

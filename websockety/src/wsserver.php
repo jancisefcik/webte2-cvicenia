@@ -4,7 +4,7 @@ use Workerman\Connection\TcpConnection;
 
 require_once __DIR__ . '/vendor/autoload.php';
 
-$ws_worker = new Worker("websocket://127.0.0.1:8282");
+$ws_worker = new Worker("websocket://0.0.0.0:8282");
 $ws_worker->count = 1; // 1 proces
 
 

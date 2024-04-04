@@ -12,7 +12,7 @@ msgText.addEventListener('input', (e) => {
 const msgBtn = document.getElementById('send');
 username = "UUID";
 
-ws = new WebSocket("wss://node8.webte.fei.stuba.sk/wss");
+ws = new WebSocket("wss://node8.webte.fei.stuba.sk:8443/wss");
 
 ws.onopen = function(e) {
     
